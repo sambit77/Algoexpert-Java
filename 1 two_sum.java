@@ -26,6 +26,7 @@ class A
 		System.out.println("the numbers that make" +target +" are ");
 		System.out.println(Arrays.toString(brr));
 	}
+	
 	public static int[] twosum_way1(int[] nums , int target)
 	{
 		int[] result = new int[2];
