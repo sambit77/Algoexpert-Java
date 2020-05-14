@@ -10,6 +10,10 @@ Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [2, 7].*/
+
+//USING LEFT RIGHT POINTERS
+//Time Compexity O(n log n)
+//Space complexity O(1)
 import java.util.*;
 class A
 {
