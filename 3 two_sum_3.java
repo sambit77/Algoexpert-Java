@@ -10,6 +10,9 @@ Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [2, 71].*/
+//using hashmap
+//Time Complexity O(n)
+//Space Complsexity O(n)
 import java.util.*;
 class A
 {
