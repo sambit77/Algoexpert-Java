@@ -6,6 +6,8 @@
 //Time Complexity for this algorithm that is only for finding closest value in bst only
 // average case Time Complexity O(log n) || Space Complexity O(log n)
 //worst case Time Complexity O(n) || Space Complexity O(n)
+//here as we provide solution using recursion ,recursion uses stack while recursive function calls 
+//size of which depends on the height of the tree hence soace complexity depend son height of tree here
 class BinarySearchTree
 {
 	class Node
