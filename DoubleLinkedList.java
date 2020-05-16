@@ -1,4 +1,6 @@
 //@Sambit
+//Double Linked List creation , various insertion operation , deletion ,cheking the presence , traversing
+
 class DoubleyLinkedList
 {
 	//too keep track of head and tail of the double linked list ,initially null means no list
@@ -48,6 +50,7 @@ class DoubleyLinkedList
 
 
     //to print the linkedlist
+	//Time Complexit O(n) | Space Complexity O(1)
 	public static void printList(DoubleyLinkedList list)
 	{ 
 		//a pointer to be used ad traverse initialized to head
@@ -62,6 +65,7 @@ class DoubleyLinkedList
 
 
 	//to insert a passed node at any given postion
+	//Time Complexit O(p) p = postion | Space Complexity O(1)
 	public static void insertAtPosition(DoubleyLinkedList list,int position,Node nodeToInsert)
 	{
 		//if we want to insert at beginning ..it will be the head
@@ -99,6 +103,7 @@ class DoubleyLinkedList
 	}
 
 	//make a passed node as head in the list
+	//Time Complexit O(1) | Space Complexity O(1)
 	public static void setHead(DoubleyLinkedList list,Node node)
 	{
 		//if no node is present in the begining then make this node as both head & tail
@@ -115,6 +120,7 @@ class DoubleyLinkedList
 	}
 
 	//set the passed node as tail
+	//Time Complexit O(1) | Space Complexity O(1)
 	public static void setTail(DoubleyLinkedList list,Node node)
 	{
 		//if no tail is present that is list is empty then set the passed node as head&tail 
@@ -130,6 +136,7 @@ class DoubleyLinkedList
 	}
 
 	//insert a node before a given node in the list
+	//Time Complexit O(1) | Space Complexity O(1)
      public static void insertBefore(DoubleyLinkedList list,Node node,Node nodeToInsert)
      //to remove a node havinhg given value
      {
@@ -162,7 +169,9 @@ class DoubleyLinkedList
      	node.prev = nodeToInsert;
      }
 
+	
       //insert a node after a given node in the list
+	//Time Complexit O(1) | Space Complexity O(1)
      public static void insertAfter(DoubleyLinkedList list,Node node,Node nodeToInsert)
      {	
      	if (nodeToInsert == list.head && nodeToInsert == list.tail)
@@ -190,6 +199,7 @@ class DoubleyLinkedList
      }
 
      //remove a node with given value from list
+	//Time Complexity O(n) | Space Complexity O(1)
 	public static void removenodesWithValue(DoubleyLinkedList list , int value)
 	{
 		//make copy of head pointer to traverse the list
@@ -215,6 +225,7 @@ class DoubleyLinkedList
 	}
 
 	//removing a given node from list
+	//Time Complexity O(1) | Space Complexity O(1)
 	public static void remove(DoubleyLinkedList list,Node node)
 	{
 		//to remove a first node simply point the head to second node next  to first
@@ -230,6 +241,9 @@ class DoubleyLinkedList
 		// remove the bindings of  a node that is left & right pointers of node will be null
 		removeBindingsNode(list,node);
 	}
+	
+	//remove intermediates 
+	//Time Complexity O(1) | Space Complexity O(1)
 	public static void removeBindingsNode(DoubleyLinkedList list,Node node)
 	{
 		//before making prev pointer null make sure the previous node to the node to be
@@ -250,6 +264,7 @@ class DoubleyLinkedList
 	}
 
 	//to check if the passed list contains a node with passed value
+	//Time Complexity O(n) | Space Complexity O(1)
 	public static boolean containsNodeWithValue(DoubleyLinkedList list,int value)
 	{
 		//taking a pointer and running it all thw way from head to end of list
