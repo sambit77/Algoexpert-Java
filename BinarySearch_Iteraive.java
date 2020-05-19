@@ -24,7 +24,7 @@ class A
 			mid = (begin+end)/2;
 			if(arr[mid] == target)
 			{
-               return mid; // element found at mid index
+               return mid;  // element found at mid index
 			}
 			else if(arr[mid] > target)
 			{
