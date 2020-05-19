@@ -17,7 +17,7 @@ class A
 	}
 	public static int binarySearchHelper(int[] arr,int target,int begin,int end)
 	{
-		if(begin>end)
+		if(begin > end)
 		{
 			return -1; //elemnet is not found in array
 		}
