@@ -1,3 +1,11 @@
+//Time Complexity O(n log(n) + m log(m))  | Space Complexity O(1)
+// n = no of elements in array one
+// m = no of elements in array two
+//time complexity is show because of sorting technique as the most optimal sorting technique will have
+// O(n log(n)) time complexity where n is no of elements in array
+
+//the time complexity of actual scanning process by pointers is O(m+n) which falls below the overall time complexity
+//of the algorithm
 import java.util.*;
 class A
 {
@@ -20,17 +28,17 @@ class A
 		int[] rrr = new int[2]; // stores the pair;
 		int smallestDiff = Integer.MAX_VALUE; // stores the smallest difference value
 
-		int firstNum = 0 ;
-		int secondNum = 0;
+		int firstNum = 0 ;  //element of array 1
+		int secondNum = 0; //element of array 2
 
-		int idxa = 0;
-		int idxb = 0;
+		int idxa = 0; //pointer to scan array 1
+		int idxb = 0;  //pointer to scan array 2
 		int potentialSoln = 0;
 		while(idxa < arr.length && idxb < brr.length)
 		{
            firstNum = arr[idxa];
            secondNum = brr[idxb];
-           potentialSoln = Math.abs(firstNum - secondNum);
+           potentialSoln = Math.abs(firstNum - secondNum);  //finding absolute diference
 
            if(firstNum < secondNum)
            {
@@ -42,6 +50,7 @@ class A
            }
            else
            {
+		   //both numbers are same
            	potentialSoln = 0;
            }
 
