@@ -1,3 +1,4 @@
+//Question :- find the pair having smallest absolute difference ,pick one element from array 1 and other from array 2
 //Time Complexity O(n log(n) + m log(m))  | Space Complexity O(1)
 // n = no of elements in array one
 // m = no of elements in array two
