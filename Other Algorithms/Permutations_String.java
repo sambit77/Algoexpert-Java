@@ -1,4 +1,5 @@
 //Program to find all the permutations of a String
+//Time Complexity O(n!)
 import java.util.*;
 class A
 {
