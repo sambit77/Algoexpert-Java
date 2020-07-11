@@ -32,7 +32,7 @@ class A
        	{
        		if(denom <= amt)
        		{
-       			minCoins[amt] = Math.min(minCoins[amt],1+minCoins[amt-denom]);
+       			 minCoins[amt] = Math.min(minCoins[amt],1+minCoins[amt-denom]);
        		}
        	}
        }
