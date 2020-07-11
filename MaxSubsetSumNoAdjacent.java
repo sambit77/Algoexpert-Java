@@ -49,7 +49,7 @@ class A
 		int first  = Math.max(arr[0],arr[1]);
 		int current = 0;
 
-		for(int i = 2 ; i < arr.length ; i++)
+		for(int i = 2 ; i <  arr.length ; i++)
 		{
            current = Math.max(first,second+arr[i]);
        
