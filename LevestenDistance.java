@@ -117,7 +117,7 @@ class A
        //evenedits array else if the number of iterations id odd that is length of big string is odd then return
        //the last element of oddEditd array
 
-       return big.length() % 2 == 0 ? evenEdits[small.length()] : oddEdits[small.length()];
+       return big.length() % 2 == 0 ?  evenEdits[small.length()] : oddEdits[small.length()];
 
 	}
 }
