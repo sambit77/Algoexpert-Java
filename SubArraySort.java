@@ -71,6 +71,6 @@ class A
 		//the current number is greater than the next number
 		//if either of the condition is true->return true -> the element is out of order
 
-		return num > arr[idx+1] | num < arr[idx-1];
+		 return num > arr[idx+1] | num < arr[idx-1];
 	}
 }
