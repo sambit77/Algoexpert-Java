@@ -172,6 +172,6 @@ class A
 		//as we have traversed the 2D array from last String[] array 
 		//so we need to reverse it
 		//and this is a StringBuffer so convert it to String before returing it
-		return commonSequence.reverse().toString();
+		 return commonSequence.reverse().toString();
 	}
 }
